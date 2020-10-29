@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>想对你说</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&amp;subset=latin-ext" rel="stylesheet">
+        <link href="./font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+        <!-- CSS -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <style>
+            #canvas{
+                position:absolute;
+                right:0px;
+                bottom: 0px;
+                z-index: 1;
+            }
+        </style>
+        
+    </head>
+    <body>
+
+            
+            
+            <canvas id="canvas" width="960" height="680"></canvas>
+
+        <div class="site" id="page">
+            <section class="hero-section hero-section--image clearfix zoom">
+                <div class="hero-section__wrap">
+                        <div class="hero-section__option">
+                                <img src="assets/images/say.jpg" width="1920px" height="1080px"/>
+                            </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-lg-1 col-lg-10">
+                                <div class="title-01 title-01--11 text-center">
+                                    <h2 class="title__heading">
+                                        <div class="hero-section__words text-center"   id = "app">
+                                            <div class="title__effect is-visible">我最最最最最最最最最最爱的</div>
+                                            <div class="title__effect">超级无敌爆炸好的可爱璇</div>
+                                            <div class="title__effect">我们在一起已经在一起</div>
+                                            <div class="title__effect"><strong>{{Years}}</strong>年<strong>{{Months}}</strong>月<strong>{{Days}}</strong>日</div>
+                                            <div class="title__effect"><strong>一共{{TotalDays}}</strong>个夜晚,<strong>{{TotalDays}}</strong>个日出</div>
+                                            <div class="title__effect"><strong>{{TotalSec}}</strong>秒的点点滴滴</div>
+                                            <div class="title__effect">我们的目标</div>
+                                            <div class="title__effect">山无棱、天地合</div>
+                                            <div class="title__effect">我们还是在一起哈哈哈</div>
+                                        </div>
+                                    </h2>
+                                    <div class="title__description">
+                                        <span id="say"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+
+        <div class="button-group">
+            <a href="hope.html" class="btn btn-outline-primary button-sm">心愿</a>
+            <a href="index.html" class="btn btn-outline-primary button-sm">想对你说</a>
+            <a href="ym.html" class="btn btn-outline-primary button-sm">惹不起的大姨妈</a>
+        </div>
+
+        
+    </body>
+</html>
+<!-- JS -->
+<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+
+<script src="assets/js/plugins/animate-headline.js"></script>
+<!-- <script src="assets/js/main.js"></script> -->
+<script src="https://cdn.bootcss.com/vue/2.6.3/vue.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/2.0.5/typed.js"></script>
+
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/jscex.min.js"></script>
+<script type="text/javascript" src="./assets/js/jscex-parser.js"></script>
+<script type="text/javascript" src="./assets/js/jscex-jit.js"></script>
+<script type="text/javascript" src="./assets/js/jscex-builderbase.min.js"></script>
+<script type="text/javascript" src="./assets/js/jscex-async.min.js"></script>
+<script type="text/javascript" src="./assets/js/jscex-async-powerpack.min.js"></script>
+<script type="text/javascript" src="./assets/js/love.js" charset="utf-8"></script>
+<script>
+    var say = document.getElementById('say');
+   new Typed(say,{
+      strings: ['璇璇，谢谢你让我进入你的世界，你使我完整。<br/>2018年1月11日，作为游戏胜利的条件，我无耻的要求你牵我的手。<br/>2018年1月12日，我们去看了《无问西东》，我们都哭了，我一直握着你的手，你夸我可爱。<br/>2018年1月13日，我们相爱在一个风和日丽的中午。我说我喜欢你很久了，你说你也是。<br/>2018年1月14日，初吻献给了你。<br/>2018年1月15日，我们拥抱了，你害羞了，还说我很高，你很柔软，抱着你我很安逸，就想一直这样下去。<br/>2018年1月19日，我们正式在一起了，一起踏上回家的火车，但终点不同，你去连城，我回大吉山，我们开始了一个多月的异地恋。<br/>2018年2月24日，“网恋”奔现了，这天你对我很好，好到溢出。<br/>我们在一起的前半年吵了无数的架，也闹了几次分手，但我们还是走到了现在，我们相互磨合，慢慢改变，渐渐往对方心目中的方向前进。你为我缩小了朋友圈，减少和异性的接触，我很开心。我们之间，我是宝宝，璇璇经常都让着宝宝，什么事情都顺着宝宝，璇璇真的很爱宝宝。宝宝没什么好的，好像除了能一直粘着你，其他的什么也给不了你，但我会一直努力变好，给你很多很多。<br/>管管和璇璇要天下第一好！<br/>'],
+      typeSpeed: 200,
+      startDelay: 100,
+      loop: false,
+      cursorChar: '<i class=\"fa fa-heartbeat fa-lg\"></i>'
+   });
+
+    let app = new Vue({
+        el: '#app',
+        data: {
+            togetherDate: new Date(),
+            dayNum: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        },
+        methods: {
+            isLeapYear: function(y) {
+                return (y % 4 == 0 && y % 100 != 0) || y % 400 == 0;
+            }
+            ,
+            getTotalSeconds: function() {
+                return (new Date().getTime() - this.togetherDate.getTime()) / 1000;
+            }
+            ,
+            getTotalDays : function() {
+                return this.getTotalSeconds() / (24 * 60 * 60);
+            },
+            getMonths: function() {
+                let now = new Date();
+                let res = now.getMonth() - this.togetherDate.getMonth();
+                if (now.getDate() < this.togetherDate.getDate())
+                    --res;
+                if (res < 0)
+                    res += 12;
+                return res;
+            }
+            ,
+            getYears: function() {
+                let now = new Date();
+                let res = now.getFullYear() - this.togetherDate.getFullYear();
+                if (now.getMonth() < this.togetherDate.getMonth()) {
+                    --res;
+                } else if (now.getMonth() == this.togetherDate.getMonth() && 
+                    now.getDate() < this.togetherDate.getDate()) {
+                        --res;
+                }
+                return res;
+            },
+            getDays: function() {
+                //构造前一个月19号的日期对象
+                let now = new Date();
+
+                let nyear = now.getFullYear();
+                let nmonth = now.getMonth();
+                let nday = this.togetherDate.getDate();
+                if (nmonth == 0) {
+                    nmonth = 11;
+                    nyear--;
+                } else {
+                    nmonth--;
+                }
+                let pre = new Date();
+                pre.setFullYear(nyear, nmonth, nday);
+                // pre.setHours(0);
+                // pre.setMinutes(0);
+                // pre.setSeconds(0);
+                // pre.setMilliseconds(0);
+                let sec = (now.getTime() - pre.getTime()) / 1000;
+                let day = sec / (24 * 60 *60);
+                return day;
+            }
+            
+        },
+        created: function() {
+            this.togetherDate.setFullYear(2018, 0, 19);
+            this.togetherDate.setHours(0);
+            this.togetherDate.setMinutes(0);
+            this.togetherDate.setSeconds(0);
+            this.togetherDate.setMilliseconds(0);
+            console.log('this.togetherDate', this.togetherDate)
+            console.log('now', new Date())
+        },
+        computed : {
+            
+            Months: function() {
+                return this.getMonths();
+            }
+            ,
+            Years: function() {
+                return this.getYears();
+            },
+            Days: function() {
+                return this.getDays();
+            },
+            TotalDays: function() {
+                return Math.floor(this.getTotalDays());
+            },
+            TotalSec: function() {
+                return this.getTotalSeconds();
+            }
+        }
+    });
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    (function(){
+        var canvas = $('#canvas');
+
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;
+        }
+
+        var width = canvas.width();
+        var height = canvas.height();
+        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 700, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var hold = 1;
+
+        
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(growAnimate());
+            $await(flowAnimate());
+            
+        }));
+
+        runAsync().start();
+    })();
+
+</script>
+
